@@ -789,38 +789,6 @@ footer ul li a:hover {
     padding: 0px 3px;
 }
 
-.from-right{
-    animation: fromRightAnimation both;
-    animation-timeline: view(70% 5%);
-}
-@keyframes fromRightAnimation {
-        from {
-        opacity: 0;
-        transform: translateX(400px) scale(0.8);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0) scale(1);
-    }
-}
-
-.from-left{
-    animation: fromLeftAnimation both;
-    animation-timeline: view(70% 5%);
-}
-@keyframes fromLeftAnimation {
-        from {
-        opacity: 0;
-        transform: translateX(-400px) scale(0.8);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0) scale(1);
-    }
-}
-
 .autoDisplay {
     animation: autoDisplayAnimation both;
     animation-timeline: view(70% 5%);
@@ -857,6 +825,10 @@ footer ul li a:hover {
         display: flex;
         align-items: flex-end;
     }
+
+    .contact .card-form .row {
+    grid-template-columns: 1fr;
+}
 
     .latests {
         padding-top: 80vh;
